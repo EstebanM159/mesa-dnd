@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    filter:sepia(25%);
+}
+body{
+    font-family: 'MonteCarlo', cursive;
+    color:rgb(5, 3, 46); 
+    background-size:cover;
+    background-image:url("../images/backgrounduniversal.jpg");
+    
+}
+a{
+    color:inherit;
+}
+header{
+    font-family: 'MonteCarlo', cursive;
+    margin:0px;
+    background-image:url("../images/headerscroll.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    -webkit-filter: drop-shadow(0px 10px 1px rgba(0,0,0,.6));
+    height:180px;
+    display:flex;
+}
+header h1{
+    display:inline-block;
+    width:50px;
+    font-size: large;
+    padding: 30px;
+    margin-left:15px;
+    transform: rotate(355deg);
+    text-shadow: 1px 1px rgb(0 0 0 / 50%);
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.6));
+    color: #9e312b;
+    margin-top:30px;
+    background-image:url("../images/seal.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+header ul{
+    display:flex;
+    list-style: none;
+    flex:auto;
+    flex-flow: row-reverse;
+    margin-right:50px;
+    margin-top:50px;
+}
+header ul li img{
+    flex:auto;
+    filter:brightness(80%);
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    margin-left:5px;
+    margin-right:5px;
+    transition: 1s;
+}
+header ul li img:hover{
+    width:100px;
+    height:100px;
+}
+#paper{
+    display:table;
+    height:900px;
+    width:1200px;
+    background-size:cover;
+    background-image:url("../images/backgroundnew.png");
+    font-size: 46px;
+    font-weight: 400;
+    -webkit-filter: drop-shadow(0px 0px 25px rgba(0,0,0,.6));
+    margin:auto;
+    margin-top:20px;
+    padding:55px;
+    color: rgba(0,0,0,.9);
+    text-shadow: 1px 1px rgb(0 0 0 / 30%);
+    line-height: 1.4;
+}
+.bardeon{
+    background-repeat: round;
+}
+#paper img{
+    display:inline-flex;
+    filter:sepia(1);
+    float:left;
+    place-self: flex-start;
+    margin-right:15px;
+    width:400px;
+}
