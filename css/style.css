@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 *{
     margin:0;
     padding:0;
 }
 html{
     filter:sepia(25%);
+    box-sizing: border-box;
 }
 body{
     font-family: 'MonteCarlo', cursive;
@@ -23,15 +31,16 @@ header{
     background-repeat: no-repeat;
     background-position: left;
     -webkit-filter: drop-shadow(0px 10px 1px rgba(0,0,0,.6));
-    height:180px;
+    height:200px;
     display:flex;
+    justify-content: space-between;
 }
 header h1{
     display:inline-block;
-    width:50px;
+   
     font-size: large;
     padding: 30px;
-    margin-left:15px;
+    
     transform: rotate(355deg);
     text-shadow: 1px 1px rgb(0 0 0 / 50%);
     -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.6));
@@ -44,10 +53,9 @@ header h1{
 header ul{
     display:flex;
     list-style: none;
-    flex:auto;
-    flex-flow: row-reverse;
-    margin-right:50px;
-    margin-top:50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 header ul li img{
     flex:auto;
@@ -64,20 +72,20 @@ header ul li img:hover{
     height:100px;
 }
 #paper{
-    display:table;
-    height:900px;
-    width:1200px;
+    display:flex;
+    
     background-size:cover;
+    background-repeat: no-repeat;
     background-image:url("../images/backgroundnew.png");
     font-size: 46px;
     font-weight: 400;
     -webkit-filter: drop-shadow(0px 0px 25px rgba(0,0,0,.6));
-    margin:auto;
-    margin-top:20px;
-    padding:55px;
     color: rgba(0,0,0,.9);
     text-shadow: 1px 1px rgb(0 0 0 / 30%);
     line-height: 1.4;
+}
+.texto{
+    padding: 40px;
 }
 .bardeon{
     background-repeat: round;
